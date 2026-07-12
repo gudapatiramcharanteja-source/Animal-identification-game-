@@ -1,39 +1,69 @@
-# Animal-identification-game-
-import random
+# Animal-identification-game
+# 🐾 Animal Identification Game
 
-animals = {
-    "Lion": "King of the Jungle",
-    "Elephant": "Largest land animal",
-    "Tiger": "Striped big cat",
-    "Giraffe": "Tallest animal",
-    "Zebra": "Black and white striped animal",
-    "Monkey": "Loves bananas",
-    "Kangaroo": "Has a pouch",
-    "Penguin": "Flightless bird that swims"
-}
+An interactive Animal Identification Game built using HTML, CSS, and JavaScript. Players identify animals based on images, descriptions, or clues and earn points for correct answers.
 
-score = 0
-questions = list(animals.items())
-random.shuffle(questions)
+## Features
 
-print("🐾 Welcome to the Animal Identification Game! 🐾")
-print("Guess the animal from the clue.\n")
+- 🎮 Interactive gameplay
+- 🦁 Multiple animal categories
+- 🏆 Score tracking
+- 📱 Responsive design
+- 🔄 Restart game option
 
-for animal, clue in questions:
-    answer = input(f"Clue: {clue}\nYour answer: ").strip()
+## Technologies Used
 
-    if answer.lower() == animal.lower():
-        print("✅ Correct!\n")
-        score += 1
-    else:
-        print(f"❌ Wrong! The correct answer is {animal}.\n")
+- HTML5
+- CSS3
+- JavaScript
 
-print("=" * 30)
-print(f"Game Over! Your Score: {score}/{len(questions)}")
+## Project Structure
 
-if score == len(questions):
-    print("🏆 Excellent! Perfect score!")
-elif score >= len(questions) // 2:
-    print("👍 Well done!")
-else:
-    print("😊 Keep practicing and try again!")
+```
+Animal-Identification-Game/
+│── index.html
+│── style.css
+│── script.js
+│── assets/
+│   ├── images/
+│   └── sounds/
+└── README.md
+```
+
+## How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/Animal-Identification-Game.git
+   ```
+
+2. Open the project folder:
+   ```bash
+   cd Animal-Identification-Game
+   ```
+
+3. Open `index.html` in your web browser.
+
+## Gameplay
+
+- Start the game.
+- View the animal image or clue.
+- Select or enter the correct animal name.
+- Earn points for each correct answer.
+- Complete all rounds to see your final score.
+
+## Future Improvements
+
+- Add difficulty levels
+- Timer-based challenges
+- More animal categories
+- Leaderboard
+- Sound effects and animations
+
+## License
+
+This project is licensed under the MIT License.
+
+## Author
+
+**Your Name**
